@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/count"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+
+        android:padding="155dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="count"
+
+        android:id="@+id/btnCount"/>
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+            android:id="@+id/save"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restauser"
+            android:id="@+id/retrieve"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reinitialiser"
+            android:id="@+id/zero"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+      >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/black"
+            android:textColor="@color/white"
+            android:text="Black"
+            android:backgroundTint="@color/black"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/red"
+            android:textColor="@color/white"
+            android:text="Red"
+            android:backgroundTint="@color/design_default_color_error"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/blue"
+            android:textColor="@color/white"
+            android:text="Blue"
+            android:backgroundTint="@color/purple_700"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/green"
+            android:textColor="@color/white"
+            android:text="Green"
+            android:shadowColor="@color/teal_700"
+            android:backgroundTint="@color/teal_700"/>
+    </LinearLayout>
+
+
+</LinearLayout>
